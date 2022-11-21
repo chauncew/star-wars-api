@@ -6,6 +6,8 @@
 }
 
 /* Mobile First Styles */
+
+
 .main-heading {
     position: absolute;
     top: 10%;
@@ -34,15 +36,131 @@ video {
     object-fit: cover;
 }
 
-.main-container {
+/* Quotes Section Styles */
+.quotes-background {
+    position: sticky;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
-    background: url('./images/main-image.jpg')center center/cover no-repeat;
+    background: url('./images/main-image2.jpg')center center/cover no-repeat;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.quotes {
+    padding: 0 10px;
+    margin-bottom: 70%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.quotes h1 {
+    margin-bottom: 80%;
+}
+
+.char-quotes {
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes-heading {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20%;
+}
+
+.quotes img {
+    width: clamp(21rem, 60vw, 65rem);
+}
+
+.frames {
+    position: relative;
+    z-index: 20;
+}
+
+.frames img {
+    
+}
+
+.image-info img {
+    width: clamp(15rem, 42vw, 50rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.image-info h3 {
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
+}
+
+.frame2 .info2 img {
+    height: 46%;
+    width: 76%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.frame3 .info3 img {
+    height: 46%;
+    width: 76%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.frame4 .info4 img {
+    height: 46%;
+    width: 76%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.frame5 .info5 img {
+    height: 46%;
+    width: 76.5%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.frame6 .info6 img {
+    height: 46%;
+    width: 76.5%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.image-info h3{
+   position: absolute;
+   bottom: 30%;
+   left: 35%;
+   width: 50%;
+   line-height: 1.5;
+   letter-spacing: 1.1px;
+   text-align: center;
+   color: #fff;
+   z-index: 50;
+}
+
+.vader-last-word {
+    color: #fff;
+    margin-top: 100%;
+    text-align: center;
+}
+
+.test-section {
+    height: 100vh;
+    width: 100%;
+    background: brown;
 }
 
 
-
-
+/* Header Section Media Queries */
 @media(min-width: 830px) {
     video {
     position: absolute;
