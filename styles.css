@@ -5,8 +5,9 @@
     font-family: sans-serif;
 }
 
-html body {
+html {
     overflow-x: hidden;
+     
 }
 
 /* Mobile First Styles */
@@ -44,7 +45,7 @@ video {
     position: sticky;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background: url('./images/main-image2.jpg')center center/cover no-repeat;
     object-fit: cover;
