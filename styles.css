@@ -5,8 +5,11 @@
     font-family: sans-serif;
 }
 
-/* Mobile First Styles */
+html {
+    overflow-x: hidden;
+}
 
+/* Mobile First Styles */
 
 .main-heading {
     position: absolute;
@@ -75,7 +78,7 @@ video {
 }
 
 .quotes img {
-    width: clamp(21rem, 60vw, 65rem);
+    width: clamp(21rem, 80vw, 65rem);
 }
 
 .frames {
@@ -96,10 +99,12 @@ video {
     z-index: -1;
 }
 
-.image-info h3 {
-    font-size: clamp(0.8rem, 1.5vw, 2rem);
+.frame1 .info1 img {
+    height: 46%;
+    width: 76%;
+    object-fit: cover;
+    z-index: -1;
 }
-
 .frame2 .info2 img {
     height: 46%;
     width: 76%;
@@ -138,8 +143,9 @@ video {
 .image-info h3{
    position: absolute;
    bottom: 30%;
-   left: 35%;
-   width: 50%;
+   left: 28.5%;
+   width: 60%;
+   font-size: clamp(0.9rem, 3vw, 2rem);
    line-height: 1.5;
    letter-spacing: 1.1px;
    text-align: center;
