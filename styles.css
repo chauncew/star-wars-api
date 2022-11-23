@@ -87,10 +87,6 @@ video {
     z-index: 20;
 }
 
-.frames img {
-    
-}
-
 .image-info img {
     width: clamp(15rem, 42vw, 50rem);
     position: absolute;
