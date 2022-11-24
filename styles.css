@@ -5,10 +5,6 @@
     font-family: sans-serif;
 }
 
-html {
-    overflow-x: hidden;
-     
-}
 
 /* Mobile First Styles */
 
@@ -46,17 +42,16 @@ video {
     top: 0;
     left: 0;
     height: 110vh;
-    width: 100%;
+    /* width: 100%; */
     background: url('./images/main-image2.jpg')center center/cover no-repeat;
-    object-fit: cover;
     z-index: -1;
 }
 
 .quotes {
-    padding: 0 10px;
+    /* padding: 0 10px; */
     margin-bottom: 70%;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,12 +69,12 @@ video {
 
 .quotes-heading {
     text-align: center;
-    padding-top: 30px;
+    padding: 0 10px;
     margin-bottom: 20%;
 }
 
 .quotes img {
-    width: clamp(21rem, 80vw, 65rem);
+    width: clamp(17.93rem, 80vw, 65rem);
 }
 
 .frames {
@@ -139,10 +134,11 @@ video {
 
 .image-info h3{
    position: absolute;
-   bottom: 30%;
-   left: 28.5%;
-   width: 60%;
-   font-size: clamp(0.9rem, 3vw, 2rem);
+   bottom: 25%;
+   left: 50%;
+   transform: translate(-50%, -25%);
+   width: 74%;
+   font-size: clamp(0.85rem, 3vw, 2rem);
    line-height: 1.5;
    letter-spacing: 1.1px;
    text-align: center;
