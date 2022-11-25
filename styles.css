@@ -132,7 +132,7 @@ video {
     z-index: -1;
 }
 
-.image-info h3{
+.image-info h3 {
    position: absolute;
    bottom: 25%;
    left: 50%;
@@ -158,6 +158,54 @@ video {
     background: brown;
 }
 
+/* Stars Card Section */
+.star-cards-container {
+    /* height: 100vw; */
+    width: 100%;
+    color: #fff;
+    background: #000;
+    padding-bottom: 70px;
+}
+
+.star-cards-container h1 {
+    text-align: center;
+}
+
+.star-cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 15px;
+}
+
+.cards:hover {
+    transition: all 0.5s;
+    transform: scale(1.1);
+}
+
+.cards {
+    height: 500px;
+    width: 375px;
+    margin-top: 50px;
+}
+
+.cards:nth-child(2) img {
+    object-position: top;
+}
+
+.cards a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cards img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 5px solid orangered;
+}
 
 /* Header Section Media Queries */
 @media(min-width: 830px) {
@@ -169,5 +217,12 @@ video {
     width: 82.4%;
     margin: 0 auto;
     object-fit: cover;
+    }
+}
+
+/* Quotes Section Media Queries */
+@media(min-width: 700px) {
+    .image-info h3 {
+        bottom: 30%;
     }
 }

@@ -1,17 +1,27 @@
-// const getData = async () => {
-//     try{
-//     const fetchData = await fetch("https://akabab.github.io/starwars-api/api/all.json")
-//     const data = await fetchData.json()
-//     console.log(data)
-//     data.map((info) => {
-//         testing.innerHTML = `<img src=${info.image}></img>`
-//     })
-//     } catch(error) {
-//         console.log(`Error fetching data. ${error}`)
-//     }
-// }
+const starCards = document.querySelector(".star-cards")
 
-// getData()
+const getData = async () => {
+    try{
+    const fetchData = await fetch("https://akabab.github.io/starwars-api/api/all.json")
+    const data = await fetchData.json()
+    console.log(data)
+    data.map((info) => {
+        starCards.innerHTML+= `
+        <div class="cards">
+        <a href="#" class="star-images">
+            <img src=${info.image}></img>
+            <h2 class="name">${info.name}</h2>
+        </a>
+        </div>
+        `
+    })
+    } catch(error) {
+        console.log(`Error fetching data. ${error}`)
+    }
+}
 
-// const testing = document.querySelector('.testing')
+{/* <img src=${info.image}></img> */}
+
+getData()
+
 
