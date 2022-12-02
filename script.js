@@ -22,7 +22,7 @@ const getData = async () => {
                 <h2>Species: ${info.species}</h2>
                 <h2>Home World: ${info.homeworld}</h2>
                 <div class="anchor-button">
-                    <a href=${info.wiki}>More about ${info.name}</a>
+                    <a href=${info.wiki} class="anchor-button">More about ${info.name}</a>
                 </div>
             </div>
         </div>
