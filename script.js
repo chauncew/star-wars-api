@@ -10,10 +10,10 @@ const wiki =document.querySelector('.star-cards a')
 
 const getData = async () => {
     try{
-    const fetchData = await fetch("https://akabab.github.io/starwars-api/api/all.json")
-    const data = await fetchData.json()
-    console.log(data)
-    data.map((info) => {
+        const fetchData = await fetch("https://akabab.github.io/starwars-api/api/all.json")
+        const data = await fetchData.json()
+        console.log(data)
+        data.map((info) => {
         starCards.innerHTML+= `
         <div class="cards">
             <img src=${info.image}></img>
@@ -23,7 +23,7 @@ const getData = async () => {
                 <h2>Home World: ${info.homeworld}</h2>
                 <div class="anchor-button">
                     <a href=${info.wiki} class="anchor-button">More about ${info.name}</a>
-                </div>
+                 </div>
             </div>
         </div>
         `

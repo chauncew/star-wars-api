@@ -7,7 +7,6 @@
 
 
 /* Mobile First Styles */
-
 .main-heading {
     position: absolute;
     top: 10%;
@@ -20,7 +19,7 @@
     color: #fff;
     text-align: center;
     z-index: 5;
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Zen Dots', sans-serif;
 }
 
 .header-container {
@@ -47,7 +46,7 @@ video {
 }
 
 .quotes {
-    margin-bottom: 70%;
+    margin-bottom: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -56,7 +55,7 @@ video {
 }
 
 .quotes h1 {
-    margin-bottom: 80%;
+    margin-bottom: 17%;
 }
 
 .char-quotes {
@@ -67,7 +66,7 @@ video {
 .quotes-heading {
     text-align: center;
     padding: 0 10px;
-    margin-bottom: 20%;
+    /* margin-bottom: 10%; */
 }
 
 .quotes img {
@@ -145,7 +144,7 @@ video {
 
 .vader-last-word {
     color: #fff;
-    margin-top: 100%;
+    margin-top: 20%;
     text-align: center;
 }
 
@@ -178,14 +177,17 @@ video {
     flex-wrap: wrap;
     max-width: 70%;
     gap: 15px;
+    padding-bottom: 80px;
 }
 
 .cards {
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: 375px;
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 350px;
+    margin-top: 40px;
     background: #000;
     border-radius: 5px;
     transition: 0.4s ;
@@ -196,7 +198,7 @@ video {
 }
 
 .cards img {
-    height: 100%;
+    height: 65%;
     width: 100%;
     object-fit: cover;
     border-bottom: 5px solid orangered;
@@ -208,6 +210,7 @@ video {
     padding: 20px;
     background: #000;
     border-radius: 5px;
+    
 }
 
 .anchor-button {
@@ -250,12 +253,5 @@ video {
 @media(min-width: 700px) {
     .image-info h3 {
         bottom: 30%;
-    }
-}
-
-@media(min-width: 280px) {
-    .bottom-info a {
-        /* font-size: clamp(0.5rem, 0.8vw, 1.1rem); */
-        /* width: 100%; */
     }
 }
