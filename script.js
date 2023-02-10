@@ -3,7 +3,7 @@ const testing = document.querySelector(".testing")
 const close = document.querySelector('.close')
 const closeTab = document.querySelector(".closeTab")
 const body = document.querySelector('body')
-const wiki =document.querySelector('.star-cards a')
+const wiki = document.querySelector('.star-cards a')
 
 
 
@@ -12,7 +12,7 @@ const getData = async () => {
     try{
         const fetchData = await fetch("https://akabab.github.io/starwars-api/api/all.json")
         const data = await fetchData.json()
-        console.log(data)
+        // console.log(data)
         data.map((info) => {
         starCards.innerHTML+= `
         <div class="cards">
@@ -22,8 +22,8 @@ const getData = async () => {
                 <h2>Species: ${info.species}</h2>
                 <h2>Home World: ${info.homeworld}</h2>
                 <div class="anchor-button">
-                    <a href=${info.wiki} class="anchor-button">More about ${info.name}</a>
-                 </div>
+                    <a href=${info.wiki} target="_blank" class="anchor-button">More About ${info.name}</a>
+                </div>
             </div>
         </div>
         `
@@ -32,40 +32,58 @@ const getData = async () => {
         console.log(`Error fetching data. ${error}`)
     }
 }
-
-
 getData()
 
+//Quotes Section Animations
+gsap.registerPlugin()
 
-// starCards.forEach((cardInfo) => {
-//     cardInfo.addEventListener('click', (e) => {
-//         e.preventDefault()
-//         console.log(e.target)
-//     })
-// })
+const quotes1 = gsap.timeline()
+quotes1
+.from('.frame1', {autoAlpha: 0, x: -1100, duration: 0.5})
+const quotes2 = gsap.timeline()
+.from('.frame2', {autoAlpha: 0, x: 1100, duration: 0.5})
+const quotes3 = gsap.timeline()
+.from('.frame3', {autoAlpha: 0, x: -1100, duration: 0.5})
+const quotes4 = gsap.timeline()
+.from('.frame4', {autoAlpha: 0, x: 1100, duration: 0.5})
+const quotes5 = gsap.timeline()
+.from('.frame5', {autoAlpha: 0, x: -1100, duration: 0.5})
+const quotes6 = gsap.timeline()
+.from('.frame6', {autoAlpha: 0, x: 1100, duration: 0.5})
 
-
-// const showCards = starCards.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     console.log(e.target)
-//     testing.innerHTML += `
-//         <img src=${e.target.src}></img>
-//         <h5>${e.target.textContent}</h5>
-//         <p class="closeTab">X</p>
-//     `
-//     close.addEventListener('click', () => {
-//         closeTab.style.display = 'none'
-//     })
-// })
-
-
-    // close.addEventListener('click', () => {
-    //     testing.style.display = 'none'
-    // })
-// starCards.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     console.log(e.target)
-//     testing.innerHTML += `<img scr=${e.target}></img>`
-//     e.target.classList.add('testingCards')
-//     e.target.classList.add('display')
-// })
+ScrollTrigger.create({
+    animation: quotes1,
+    trigger: '.quotes-heading',
+    start: 'top 35%',
+    end: '100%',
+})
+ScrollTrigger.create({
+    animation: quotes2,
+    trigger: '.frame2',
+    start: 'top 35%',
+    end: '100%',
+})
+ScrollTrigger.create({
+    animation: quotes3,
+    trigger: '.frame3',
+    start: 'top 35%',
+    end: '100%',
+})
+ScrollTrigger.create({
+    animation: quotes4,
+    trigger: '.frame4',
+    start: 'top 35%',
+    end: '100%',
+})
+ScrollTrigger.create({
+    animation: quotes5,
+    trigger: '.frame5',
+    start: 'top 35%',
+    end: '100%',
+})
+ScrollTrigger.create({
+    animation: quotes6,
+    trigger: '.frame6',
+    start: 'top 35%',
+    end: '100%',
+})

@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 
 /* Mobile First Styles */
 .main-heading {
@@ -70,7 +74,7 @@ video {
 }
 
 .quotes img {
-    width: clamp(17.93rem, 80vw, 65rem);
+    width: clamp(15rem, 40vw, 52rem);
 }
 
 .frames {
@@ -79,7 +83,7 @@ video {
 }
 
 .image-info img {
-    width: clamp(15rem, 42vw, 50rem);
+    width: clamp(10rem, 32vw, 50rem);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -134,7 +138,7 @@ video {
    left: 50%;
    transform: translate(-50%, -25%);
    width: 76%;
-   font-size: clamp(0.85rem, 3vw, 2rem);
+   font-size: clamp(0.7rem, 1.5vw, 1.8rem);
    line-height: 1.5;
    letter-spacing: 1.1px;
    text-align: center;
@@ -146,6 +150,7 @@ video {
     color: #fff;
     margin-top: 20%;
     text-align: center;
+    letter-spacing: 1.3px;
 }
 
 .test-section {
@@ -253,5 +258,13 @@ video {
 @media(min-width: 700px) {
     .image-info h3 {
         bottom: 30%;
+    }
+}
+
+/* Star Cards Section Styles */
+@media(max-width: 330px) {
+    .cards {
+        margin-top: 150px;
+        height: 575px;
     }
 }
