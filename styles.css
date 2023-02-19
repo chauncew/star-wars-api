@@ -9,6 +9,10 @@ html {
     overflow-x: hidden;
 }
 
+.container {
+    overflow-x: hidden;
+}
+
 
 /* Mobile First Styles */
 .main-heading {
