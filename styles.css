@@ -5,15 +5,6 @@
     font-family: sans-serif;
 }
 
-html {
-    overflow-x: hidden;
-}
-
-.container {
-    overflow-x: hidden;
-}
-
-
 /* Mobile First Styles */
 .main-heading {
     position: absolute;
@@ -58,10 +49,10 @@ video {
 
 /* Quotes Section Styles */
 .quotes-background {
+    height: 110vh;
     position: sticky;
     top: 0;
     left: 0;
-    height: 110vh;
     background: url('./images/main-image2.jpg')center center/cover no-repeat;
     z-index: -1;
 }
@@ -73,6 +64,8 @@ video {
     flex-direction: column;
     align-items: center;
     color: #fff;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .quotes h1 {
