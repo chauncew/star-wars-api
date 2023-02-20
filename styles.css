@@ -32,7 +32,6 @@ video {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    display: none;
 }
 
 .landing-img {
@@ -268,12 +267,6 @@ video {
 @media(min-width: 700px) {
     .image-info h3 {
         bottom: 30%;
-    }
-    video {
-        display: block;
-    }
-    .landing-img {
-        display: none;
     }
 }
 
