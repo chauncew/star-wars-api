@@ -39,17 +39,19 @@ gsap.registerPlugin()
 
 const quotes1 = gsap.timeline()
 quotes1
-.from('.frame1', {autoAlpha: 0, x: -1100, duration: 0.5})
+.from('.frame1', {autoAlpha: 0, x: -800, duration: 0.5})
 const quotes2 = gsap.timeline()
-.from('.frame2', {autoAlpha: 0, x: 1100, duration: 0.5})
+.from('.frame2', {autoAlpha: 0, x: 800, duration: 0.5})
 const quotes3 = gsap.timeline()
-.from('.frame3', {autoAlpha: 0, x: -1100, duration: 0.5})
+.from('.frame3', {autoAlpha: 0, x: -800, duration: 0.5})
 const quotes4 = gsap.timeline()
-.from('.frame4', {autoAlpha: 0, x: 1100, duration: 0.5})
+.from('.frame4', {autoAlpha: 0, x: 800, duration: 0.5})
 const quotes5 = gsap.timeline()
-.from('.frame5', {autoAlpha: 0, x: -1100, duration: 0.5})
+.from('.frame5', {autoAlpha: 0, x: -800, duration: 0.5})
 const quotes6 = gsap.timeline()
-.from('.frame6', {autoAlpha: 0, x: 1100, duration: 0.5})
+.from('.frame6', {autoAlpha: 0, x: 800, duration: 0.5})
+const quotes7 = gsap.timeline()
+.from('.vader-last-word', {autoAlpha: 0, x: -800, duration: 0.5})
 
 ScrollTrigger.create({
     animation: quotes1,
@@ -60,30 +62,36 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     animation: quotes2,
     trigger: '.frame2',
-    start: 'top 35%',
+    start: 'top 85%',
     end: '100%',
 })
 ScrollTrigger.create({
     animation: quotes3,
     trigger: '.frame3',
-    start: 'top 35%',
+    start: 'top 85%',
     end: '100%',
 })
 ScrollTrigger.create({
     animation: quotes4,
     trigger: '.frame4',
-    start: 'top 35%',
+    start: 'top 85%',
     end: '100%',
 })
 ScrollTrigger.create({
     animation: quotes5,
     trigger: '.frame5',
-    start: 'top 35%',
+    start: 'top 85%',
     end: '100%',
 })
 ScrollTrigger.create({
     animation: quotes6,
     trigger: '.frame6',
-    start: 'top 35%',
+    start: 'top 85%',
+    end: '100%',
+})
+ScrollTrigger.create({
+    animation: quotes7,
+    trigger: '.vader-last-word',
+    start: 'top 85%',
     end: '100%',
 })
