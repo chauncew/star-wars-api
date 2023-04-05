@@ -51,7 +51,7 @@ const quotes5 = gsap.timeline()
 const quotes6 = gsap.timeline()
 .from('.frame6', {autoAlpha: 0, x: 800, duration: 0.5})
 const quotes7 = gsap.timeline()
-.from('.vader-last-word', {autoAlpha: 0, x: -800, duration: 0.5})
+.from('.vader-last-word', {autoAlpha: 0, opacity: 0, duration: 0.5})
 
 ScrollTrigger.create({
     animation: quotes1,
