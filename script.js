@@ -40,17 +40,17 @@ gsap.registerPlugin();
 const quotes1 = gsap.timeline();
 quotes1
 .from('.frame1', {autoAlpha: 0, x: -800, duration: 0.5})
-const quotes2 = gsap.timeline();
+const quotes2 = gsap.timeline()
 .from('.frame2', {autoAlpha: 0, x: 800, duration: 0.5})
-const quotes3 = gsap.timeline();
+const quotes3 = gsap.timeline()
 .from('.frame3', {autoAlpha: 0, x: -800, duration: 0.5})
-const quotes4 = gsap.timeline();
+const quotes4 = gsap.timeline()
 .from('.frame4', {autoAlpha: 0, x: 800, duration: 0.5})
-const quotes5 = gsap.timeline();
+const quotes5 = gsap.timeline()
 .from('.frame5', {autoAlpha: 0, x: -800, duration: 0.5})
-const quotes6 = gsap.timeline();
+const quotes6 = gsap.timeline()
 .from('.frame6', {autoAlpha: 0, x: 800, duration: 0.5})
-const quotes7 = gsap.timeline();
+const quotes7 = gsap.timeline()
 .from('.vader-last-word', {autoAlpha: 0, opacity: 0, duration: 0.5})
 
 ScrollTrigger.create({
